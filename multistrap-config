@@ -1,0 +1,25 @@
+[General]
+# target architecture
+arch=armhf
+# Where to put the target system.
+# We'll override this in the Dockerfile, but it's still
+# compulsory.
+directory=/sysroot-armhf/
+# don't bother with authentication.
+# I'd love to support this, but getting it working is
+# extremely challenging.
+noauth=true
+# unpack the packages
+unpack=true
+# Tidy up afterwards (makes the container smaller)
+cleanup=true
+# Both of these refer to the 'Raspbian' stanza, below
+bootstrap=Raspbian
+aptsources=Raspbian
+
+[Raspbian]
+# Required packages for our build
+packages=libasound2-dev libdbus-1-dev libssl-dev libc6-dev
+source=http://raspbian.raspberrypi.org/raspbian/
+# distribution version name
+suite=buster
