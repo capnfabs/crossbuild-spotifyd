@@ -2,7 +2,7 @@
 
 Cross-compile the Rust Application [spotifyd](https://github.com/Spotifyd/spotifyd) for the Raspberry Pi, using `cross`, `multistrap`.
 
-This is an example repo for a blog post on capnfabs.net.
+This is the example repo for a [blog post on capnfabs.net](https://capnfabs.net/posts/cross-compiling-rust-apps-linker-shenanigans-multistrap-chroot/).
 
 ## Checkout / Build instructions
 
